@@ -23,7 +23,7 @@ public class ReadFileFromURL {
         String line = input.nextLine();
         count += line.length();
       }
-      System.out.println("The file size is " + count + " cahracters");
+      System.out.println("The file size is " + count + " characters");
     } catch (MalformedURLException e) {
       System.out.println("Invalid URL");
     } catch (IOException e) {
