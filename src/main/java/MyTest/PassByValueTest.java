@@ -8,35 +8,35 @@ public class PassByValueTest {
   public static void main(String[] args) {
 
     /*
-    * Pass by value
-    * The number is copied to the method
-    * So no effect on number in main();
-    * */
+     * Pass by value
+     * The number is copied to the method
+     * So no effect on number in main();
+     * */
     System.out.println("-----Primitive test-----");
     int number = 10;
-    System.out.println("Before changeNumber: "+number);
+    System.out.println("Before changeNumber: " + number);
     changeNumber(number);
-    System.out.println("After changeNumber: "+number);
+    System.out.println("After changeNumber: " + number);
 
     System.out.println();
 
     /*
-    * Pass by value
-    * The value is memory address in this case
-    * The method changed the property of person
-    * not the address
-    * */
+     * Pass by value
+     * The value is memory address in this case
+     * The method changed the property of person
+     * not the address
+     * */
     System.out.println("-----Object test-----");
     Person person = new Person();
-    System.out.println("Before changeAge: "+person.getAge());
+    System.out.println("Before changeAge: " + person.getAge());
     person.changeAge(25);
-    System.out.println("After changeAge: "+person.getAge());
+    System.out.println("After changeAge: " + person.getAge());
 
   }
 
   public static void changeNumber(int number) {
     number = 50;
-    System.out.println("Number in method: "+number);
+    System.out.println("Number in method: " + number);
   }
 }
 

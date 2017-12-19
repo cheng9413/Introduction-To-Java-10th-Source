@@ -10,7 +10,7 @@ public class FileTest1 {
 
   public static void main(String[] args) {
 
-    File file = new File("src/main/resources","text2.txt");
+    File file = new File("src/main/resources", "text2.txt");
 
     try {
       System.out.println(file.createNewFile());

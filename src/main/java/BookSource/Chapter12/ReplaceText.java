@@ -12,7 +12,7 @@ public class ReplaceText {
 
   public static void main(String[] args) throws FileNotFoundException {
     //Check command line parameter usage
-    if (args.length!=4){
+    if (args.length != 4) {
       System.out.println(
           "Usage: java ReplaceText sourceFile targetFile oldStr newStr"
       );
@@ -21,15 +21,15 @@ public class ReplaceText {
 
     //Check if source file exists
     File sourceFile = new File(args[0]);
-    if (!sourceFile.exists()){
-      System.out.println("Source file "+args[0]+" does not exist");
+    if (!sourceFile.exists()) {
+      System.out.println("Source file " + args[0] + " does not exist");
       System.exit(2);
     }
 
     //Check if target file exists
     File targetFile = new File(args[1]);
-    if (!sourceFile.exists()){
-      System.out.println("Target file "+args[1]+" does not exist");
+    if (!sourceFile.exists()) {
+      System.out.println("Target file " + args[1] + " does not exist");
       System.exit(3);
     }
 
@@ -37,10 +37,10 @@ public class ReplaceText {
         //Create input and output
         Scanner input = new Scanner(sourceFile);
         PrintWriter output = new PrintWriter(targetFile);
-        ) {
+    ) {
       while (input.hasNext()) {
         String s1 = input.nextLine();
-        String s2 = s1.replaceAll(args[2],args[3]);
+        String s2 = s1.replaceAll(args[2], args[3]);
         output.println(s2);
       }
     }

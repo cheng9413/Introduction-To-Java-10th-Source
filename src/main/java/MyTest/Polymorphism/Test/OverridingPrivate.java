@@ -16,6 +16,7 @@ public class OverridingPrivate {
 }
 
 class PublicMethodClass extends OverridingPrivate {
+
   //cannot override
   public void foo() {
     System.out.println("Private foo()");

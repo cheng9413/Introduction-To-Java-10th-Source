@@ -5,7 +5,7 @@ package MyTest.Polymorphism.Music;
  */
 public class Instrument {
 
-  public void play(Note note){
+  public void play(Note note) {
     System.out.println("Instrument.play()");
   }
 

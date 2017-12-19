@@ -13,7 +13,6 @@ public class FileTest2 {
     File file = new File("src/main/resources/FileTest");
     System.out.println(file.mkdir());
 
-
     File file2 = new File("src/main/resources/FileTest2/abc");
     //cannot create non-existed directory when parent directory is also non-existed
     System.out.println(file2.mkdir());

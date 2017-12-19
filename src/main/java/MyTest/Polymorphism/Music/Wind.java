@@ -6,7 +6,7 @@ package MyTest.Polymorphism.Music;
 public class Wind extends Instrument {
 
   public void play(Note note) {
-    System.out.println("Wind.play() "+note);
+    System.out.println("Wind.play() " + note);
   }
 
 }

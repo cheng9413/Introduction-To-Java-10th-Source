@@ -12,6 +12,7 @@ import java.io.IOException;
  * Created by Chung Time: 下午 08:31 Date: 18-12月-2017
  */
 public class DetectEndOfFile {
+
   public static void main(String[] args) {
     try {
       try (DataOutputStream output =
@@ -23,14 +24,13 @@ public class DetectEndOfFile {
 
       try (DataInputStream input =
           new DataInputStream(new FileInputStream("test.dat"))) {
-        while (true)
+        while (true) {
           System.out.println(input.readDouble());
+        }
       }
-    }
-    catch (EOFException ex) {
+    } catch (EOFException ex) {
       System.out.println("All data were read");
-    }
-    catch (IOException ex) {
+    } catch (IOException ex) {
       ex.printStackTrace();
     }
   }
