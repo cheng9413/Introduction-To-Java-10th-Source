@@ -109,11 +109,11 @@ public class MultipleBounceBall extends Application {
         Ball ball = (Ball) node;
         //Check boundaries
         if (ball.getCenterX() < ball.getRadius() ||
-            ball.getCenterY() > getWidth() - ball.getRadius()) {
+            ball.getCenterX() > getWidth() - ball.getRadius()) {
           ball.dx *= -1; //Change ball move direction
         }
         if (ball.getCenterY() < ball.getRadius() ||
-            ball.getCenterX() > getWidth() - ball.getRadius()) {
+            ball.getCenterY() > getHeight() - ball.getRadius()) {
           ball.dy *= -1;
         }
 
