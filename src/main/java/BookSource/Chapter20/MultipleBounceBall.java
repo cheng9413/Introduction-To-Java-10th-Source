@@ -119,7 +119,7 @@ public class MultipleBounceBall extends Application {
 
         //Adjust ball position
         ball.setCenterX(ball.dx + ball.getCenterX());
-        ball.setCenterX(ball.dy + ball.getCenterY());
+        ball.setCenterY(ball.dy + ball.getCenterY());
 
 
       }
