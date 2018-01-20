@@ -1,10 +1,9 @@
-package Chapter21;
+package BookSource.Chapter21;
 //Created by Chung
 //Time: 22:13
 //Date: 24-12-2017
 
 import java.io.File;
-import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Scanner;

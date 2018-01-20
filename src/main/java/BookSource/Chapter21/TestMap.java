@@ -1,4 +1,4 @@
-package Chapter21;
+package BookSource.Chapter21;
 //Created by Chung
 //Time: 22:30
 //Date: 24-12-2017
@@ -6,7 +6,6 @@ package Chapter21;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
-import java.util.SplittableRandom;
 import java.util.TreeMap;
 
 public class TestMap {
